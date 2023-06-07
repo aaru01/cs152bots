@@ -150,7 +150,7 @@ def money_message(message):
         prompt = "Is the person asking for money? \nMessage: " + message + "\nAnswer:"
         response = openai.Completion.create(
             engine="text-davinci-003",
-            model='gpt-4',
+            #model='gpt-4',
             prompt=prompt,
             temperature=0.3,
             max_tokens=1,
